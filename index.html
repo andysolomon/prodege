@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Welcome to Foundation</title>
+  
+	<!-- Included CSS Files -->
+	<!-- Combine and Compress These CSS Files -->
+	<link rel="stylesheet" href="stylesheets/globals.css">
+	<link rel="stylesheet" href="stylesheets/typography.css">
+	<link rel="stylesheet" href="stylesheets/grid.css">
+	<link rel="stylesheet" href="stylesheets/ui.css">
+	<link rel="stylesheet" href="stylesheets/forms.css">
+	<link rel="stylesheet" href="stylesheets/orbit.css">
+	<link rel="stylesheet" href="stylesheets/reveal.css">
+	<link rel="stylesheet" href="stylesheets/mobile.css">
+	<!-- End Combine and Compress These CSS Files -->
+	<link rel="stylesheet" href="stylesheets/app.css">
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="stylesheets/ie.css">
+	<![endif]-->
+	
+	<script src="javascripts/modernizr.foundation.js"></script>
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<!-- container -->
+	<div class="container">
+
+<div id="myModal" class="reveal-modal">
+<h2>Test Modal Box</h2>
+<p>I love jelly-o chocolate. Pastry cotton candy I love lemon drops. Donut gummies candy jelly I love. Brownie cheesecake cookie ice cream marzipan jelly jujubes faworki. Liquorice powder carrot cake liquorice chocolate cake. Biscuit brownie carrot cake jelly-o soufflé brownie brownie.</p>
+<a class="close-reveal-modal">&#215;</a>
+</div>
+
+    <div class="row">
+      <div class="ten columns row panel centered" style="padding:20px;" >
+        <div class="five columns">
+          <h2>Headline Text</h2>
+          <p>
+          I love lollipop powder chocolate cake dessert candy canes lemon drops applicake I love. Faworki toffee jelly-o bear claw cookie. Jelly-o apple pie halvah I love.
+          </p>
+          <p>
+          Fruitcake apple pie muffin wafer. Oat cake fruitcake halvah danish dessert jujubes carrot cake. Biscuit I love muffin. Halvah I love chupa chups gummies donut fruitcake sweet roll jelly beans.
+          </p>
+          <a href="#" id="buttonForModal" class="nice large radius white button">Modal Box Trigger</a>
+        </div>
+        <div class="five columns">
+        <div style="width:200px;height:20px;background-color:gray;float:right;margin-bottom:20px;">
+          <div style="width:100px;height:20px;background-color:blue;"></div>
+        </div>
+        <ul class="block-grid three-up">
+        <li>
+        <img src="images/misc/first.png" alt="Smiley face"/>
+        </li>
+        <li>
+        <img src="images/misc/middle.png" alt="Smiley face"/>
+        </li>
+        <li>
+        <img src="images/misc/last.png" alt="Smiley face"/>
+        </li>
+        </ul>
+        <form>
+          <label for="inlineNiceTextarea">Add a new comment</label>
+          <textarea placeholder="Add a comment here" id="inlineNiceTextarea"></textarea>
+        </form>
+        <a href="#" class="nice small radius blue button">Post comment</a>
+      </div>
+    </div>
+	</div>
+	<!-- container -->
+
+
+
+
+	<!-- Included JS Files -->
+	<script src="javascripts/jquery.min.js"></script>
+	<!-- Combine and Compress These JS Files -->
+	<script src="javascripts/jquery.reveal.js"></script>
+	<script src="javascripts/jquery.orbit-1.4.0.js"></script>
+	<script src="javascripts/jquery.customforms.js"></script>
+	<script src="javascripts/jquery.placeholder.min.js"></script>
+	<script src="javascripts/jquery.tooltips.js"></script>
+	<!-- End Combine and Compress These JS Files -->
+	<script src="javascripts/app.js"></script>
+  <script type="text/javascript">
+   $(document).ready(function() {
+     $('#buttonForModal').click(function() {
+      $('#myModal').reveal();
+     });
+   });
+  </script>
+
+</body>
+</html>
